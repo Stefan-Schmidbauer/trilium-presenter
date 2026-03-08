@@ -1,0 +1,81 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.so
+.pytest_cache/
+venv/
+env/
+
+# Database files
+*.db
+
+# Generated output
+html_output/
+md/
+
+# Export and output directories - keep directories but ignore contents
+export/*
+!export/.gitkeep
+created/*
+!created/.gitkeep
+
+# Temporary files
+tech/temp/*
+!tech/temp/.gitkeep
+tech/logs/*
+!tech/logs/.gitkeep
+
+# Backups
+tech/backups/*
+!tech/backups/.gitkeep
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+#Claude
+CLAUDE.md
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# NPM/Node (if any)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables and secrets
+.env
+
+# User configuration (contains personal settings)
+config/presentation.yaml
+
+# Installation log
+install.log
+
+# Claude Code - ignore all except agents
+.claude/*
+!.claude/agents/
+
+
+# Blog output directory
+blog/
+
+# Ignored asset files (keep application icon)
+config/html_templates/assets/content-background.svg
+config/html_templates/assets/title-background.svg
+config/pdf_templates/assets/background.svg
+# Application icon is tracked: config/icon.svg and config/icon.png

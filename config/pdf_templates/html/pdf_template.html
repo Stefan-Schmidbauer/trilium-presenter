@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{TITLE}}</title>
+    <meta name="author" content="{{AUTHOR}}">
+    
+    <!-- Document styles for A4 PDF -->
+    <link rel="stylesheet" href="css/pdf_document.css">
+    
+    <style>
+        /* Template-specific inline styles for wkhtmltopdf */
+        html, body {
+            -webkit-print-color-adjust: exact !important;
+            print-color-adjust: exact !important;
+            color-adjust: exact !important;
+        }
+        
+        /* Background images removed - will be added via post-processing */
+        @page {
+            -webkit-print-color-adjust: exact !important;
+            print-color-adjust: exact !important;
+        }
+        
+        /* Clean body background for post-processing */
+        body {
+            background: transparent !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="document-container">
+        {{SLIDES_CONTENT}}
+        {{FOOTER_CONTENT}}
+    </div>
+</body>
+</html>

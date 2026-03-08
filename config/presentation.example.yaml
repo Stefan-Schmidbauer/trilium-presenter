@@ -1,0 +1,11 @@
+browser:
+  preferred: auto
+logging:
+  destinations:
+  - console
+  level: INFO
+navigation:
+  show_keyboard_hints: false
+  show_nav_buttons: false
+  show_presenter_link: false
+  show_slide_counter: false

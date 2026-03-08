@@ -1,0 +1,20 @@
+# Python Package Requirements for Trilium-Presenter
+#
+# These packages are installed in the virtual environment during installation.
+
+# Core dependencies
+PyYAML>=6.0
+trilium-py>=0.7.0
+python-dotenv>=1.0.0
+requests>=2.31.0
+
+# Markdown and PDF processing
+markdown>=3.4.0
+markdown2>=2.4.0
+beautifulsoup4>=4.12.0
+weasyprint>=60.0
+markdownify>=0.11.0
+pygments>=2.15.0
+latex2mathml>=3.75.0
+natsort>=8.4.0
+tqdm>=4.66.0

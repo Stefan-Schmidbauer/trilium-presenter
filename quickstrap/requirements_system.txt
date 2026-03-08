@@ -1,0 +1,14 @@
+# System Package Requirements for Trilium-Presenter (Debian/Ubuntu)
+#
+# These packages must be installed via apt before running install.py
+# Install with: sudo apt install <package-name>
+
+# Python virtual environment support
+python3-venv
+
+# WeasyPrint dependencies (PDF generation)
+libpango-1.0-0
+libpangocairo-1.0-0
+libgdk-pixbuf2.0-0
+libffi-dev
+shared-mime-info

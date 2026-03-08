@@ -1,0 +1,8 @@
+# Gitleaks ignore file
+# False positives: example curl commands with placeholder tokens in documentation
+docs/GETTING_STARTED.md:curl-auth-header:91
+.claude/agents/trilium-content-generator.md:curl-auth-header:61
+.claude/agents/trilium-content-generator.md:curl-auth-header:69
+.claude/agents/trilium-content-generator.md:curl-auth-header:84
+.claude/agents/trilium-content-generator.md:curl-auth-header:94
+.claude/agents/trilium-content-generator.md:curl-auth-header:109

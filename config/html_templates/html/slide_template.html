@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{TITLE}}</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/{{SLIDE_CSS}}">
+    <link rel="stylesheet" href="../css/navigation.css">
+</head>
+<body class="{{SLIDE_CLASS}}">
+    <div class="presentation-wrapper">
+        <div class="slide-container">
+            <div class="slide-content">
+                {{CONTENT}}
+            </div>
+            <nav class="slide-navigation">
+                {{NAVIGATION}}
+            </nav>
+            {{COUNTER}}
+        </div>
+    </div>
+    <script>
+        // Navigation configuration
+        window.navConfig = {{NAV_CONFIG}};
+    </script>
+    <script src="../js/navigation.js?v={{TIMESTAMP}}"></script>
+    <script src="../js/sync.js?v={{TIMESTAMP}}"></script>
+</body>
+</html>

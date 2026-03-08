@@ -1,0 +1,89 @@
+# Logging Configuration for HTML Presentation Generator
+# This file configures the unified logging system
+
+logging:
+  # Global log level: DEBUG, INFO, WARNING, ERROR, CRITICAL
+  level: WARNING
+  
+  # Enabled destinations: console, gui, file, messagebox
+  destinations:
+    - console
+    - gui
+  
+  # File logging configuration (only used if 'file' is in destinations)
+  file_path: "tech/logs/presentation.log"
+  
+  # Component-specific log levels (optional)
+  components:
+    export: WARNING
+    presentation: WARNING
+    gui: INFO
+    server: WARNING
+  
+  # Message formatting options
+  format:
+    include_timestamp: true
+    include_component: true
+    include_emojis: true
+    
+  # GUI logging options
+  gui:
+    # Maximum lines in GUI log widget before clearing
+    max_lines: 1000
+    
+    # Auto-scroll to bottom
+    auto_scroll: true
+    
+    # Color coding for different log levels
+    colors:
+      DEBUG: gray
+      INFO: black
+      WARNING: orange
+      ERROR: red
+      CRITICAL: red
+  
+  # Messagebox options
+  messagebox:
+    # Show messageboxes for these log levels
+    show_for_levels:
+      - ERROR
+      - CRITICAL
+    
+    # Show messageboxes for warnings in GUI mode
+    show_warnings_in_gui: false
+    
+    # Show messageboxes for success messages
+    show_success_messages: false
+
+# Example configurations for different use cases
+profiles:
+  # Development profile - verbose logging
+  development:
+    level: DEBUG
+    destinations:
+      - console
+      - file
+    file_path: "tech/logs/debug.log"
+    
+  # Production profile - minimal logging
+  production:
+    level: WARNING
+    destinations:
+      - file
+    file_path: "tech/logs/production.log"
+    
+  # GUI profile - user-friendly logging
+  gui:
+    level: INFO
+    destinations:
+      - gui
+      - messagebox
+    messagebox:
+      show_warnings_in_gui: true
+      show_success_messages: true
+  
+  # Console profile - console only
+  console:
+    level: INFO
+    destinations:
+      - console
